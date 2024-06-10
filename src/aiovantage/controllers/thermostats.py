@@ -21,7 +21,7 @@ class ThermostatsController(BaseController[Thermostat], ThermostatInterface):
     current cool and heat setpoints.
     """
 
-    vantage_types = ("Thermostat",)
+    vantage_types = ("Thermostat", "Vantage.Generic_HVAC_RS485_Zone_CHILD",)
     """The Vantage object types that this controller will fetch."""
 
     status_types = ("THERMFAN", "THERMOP", "THERMDAY")

@@ -3,11 +3,11 @@
 from dataclasses import dataclass, field
 from enum import IntEnum
 
-from .station_object import StationObject
+from .location_object import LocationObject
 
 
 @dataclass
-class Thermostat(StationObject):
+class Thermostat(LocationObject):
     """Thermostat object."""
 
     class OperationMode(IntEnum):
